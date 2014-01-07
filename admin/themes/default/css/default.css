@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-inverse {
-    background: #252525;
+    background: #222;
 }
 
 ul.navbar-nav {
@@ -45,16 +45,48 @@ ul.navbar-nav {
     line-height: inherit;
 }
 
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background: #333;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background: #333; 
+}
 
 a.navbar-brand {
     font-weight: bold;
     color: #FAFAFA!important;
 }
 
+.navbar-nav .dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-nav .dropdown-menu > li > a {
+    padding: 7px 20px;
+}
+
+.nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dropdown-menu .divider {
+    background-color: #555454;
+}
+
 .nav > li > a > img {
     width: 28px;
     height: 28px;
+<<<<<<< HEAD
     border: 1px solid #999;
+=======
+    border: 1px solid #888;
+>>>>>>> 7810fb7c3723bb88697fdee55bcb145bd8b8f941
     margin: 0 0 0 4px;
 }
 
@@ -73,6 +105,16 @@ td, th {
 
 .nav-tabs > li > a {
     border-radius: 0px;
+}
+
+.dropdown-menu {
+    border: 1px solid #333;
+    background: #333;
+    box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+    color: #eee;
 }
 
 .tab-page {
@@ -325,4 +367,28 @@ td, th {
 
 footer {
     margin-top: 40px;
+}
+
+.well {                                
+    border: none;
+    border-radius: 0px;
+    background: #fff;
+    color: #555;
+  -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+            box-shadow: 0 1px 3px rgba(0,0,0,.13);
+
+}
+
+
+.dashboard-well {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.dashboard-well a.welcome-back {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding-left: 0;
 }
